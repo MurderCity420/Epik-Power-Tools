@@ -1,7 +1,7 @@
 # Alerts
 
 The Alerts tab controls what happens when someone talks to you in chat — how the
-message is highlighted, whether a sound plays, and whether the browser tab flashes.
+message is highlighted, whether a sound plays, and whether the room tab flashes.
 
 Open it with the **blue shield** on the right of the EpikChat nav bar (or press
 **Ctrl+Shift+E**).
@@ -68,14 +68,26 @@ more see-through. It affects all five styles, not just the filled ones.
 - **Chime when mentioned** — plays a sound. Pick from 15 built-in chimes with the
   dropdown, and preview any of them with the **▶** button. All are synthesized in the
   browser; nothing is downloaded.
-- **Flash the Browser tab** — flashes the tab title so you notice a mention while you're
-  in another tab. It only fires when the tab is actually hidden, and stops as soon as you
-  come back or move the mouse.
+- **Flash the room tab** — the chat tab the mention arrived in blinks until you open it,
+  so you can see at a glance which room or IM wants you. It also flashes the *browser* tab
+  title while EpikChat is in the background, since an in-page blink can't be seen once
+  you've switched to another window; that part stops as soon as you come back.
 - **Alert when replied to** — treats someone quoting or replying to your message as a
   mention. On by default.
 
 > EpikChat already shows its own notification for **pokes**, so Power Tools deliberately
 > stays out of the way there.
+
+### When alerts fire
+
+An alert fires **once, the moment the message arrives** — whichever tab you happen to be
+looking at. A mention in a room or IM you aren't currently viewing chimes straight away and
+flashes that tab.
+
+Switching between tabs never re-triggers anything. Revisiting a conversation re-applies the
+highlighting on the messages, but the chime and the flash belong to the message arriving,
+not to it being drawn, so an old mention stays quiet no matter how often you come back to
+it.
 
 ## Viewer alerts
 
