@@ -1,10 +1,11 @@
 # Alerts
 
-The Alerts tab controls what happens when someone talks to you in chat — how the
-message is highlighted, whether a sound plays, and whether the room tab flashes.
+These settings control what happens when someone talks to you in chat — how the message
+is highlighted, whether a sound plays, and whether the room tab flashes.
 
-Open it with the **blue shield** on the right of the EpikChat nav bar (or press
-**Ctrl+Shift+E**).
+They live in **EpikChat's own Settings**: open Settings from the nav bar and choose
+**Chat Alerts**, between *Notifications* and *Layout*. Everything is built from the site's
+own controls, so it looks and behaves like the rest of the settings pages.
 
 ## What counts as a mention
 
@@ -66,8 +67,8 @@ more see-through. It affects all five styles, not just the filled ones.
 ## Alert behavior
 
 - **Chime when mentioned** — plays a sound. Pick from 15 built-in chimes with the
-  dropdown, and preview any of them with the **▶** button. All are synthesized in the
-  browser; nothing is downloaded.
+  dropdown, and hear any of them with **Preview**. All are synthesized in the browser;
+  nothing is downloaded.
 - **Flash the room tab** — the chat tab the mention arrived in blinks until you open it,
   so you can see at a glance which room or IM wants you. It also flashes the *browser* tab
   title while EpikChat is in the background, since an in-page blink can't be seen once
@@ -100,8 +101,8 @@ site's own bubble stack (top right) the moment someone starts watching.
 - **Chime** — its own sound, separate from the mention chime, so you can tell the two
   apart without looking. Defaults to Google Pop. Same 15 chimes and the same **▶**
   preview.
-- **Flash the Browser tab** — off by default here. Flashes only while the tab is hidden,
-  exactly like the mention version.
+- **Flash the browser tab for viewers** — off by default. Flashes only while the tab is
+  hidden. Viewers aren't a room tab, so the browser title is the only place to show this.
 
 **This only works while your cam is on.** EpikChat only sends viewer information about
 *your own* stream, so with your cam off there is nothing to report and the feature is
@@ -125,7 +126,9 @@ A few details worth knowing:
 Add nicknames, a shortened first name, or common misspellings of your username. Anything
 in this list pings you the same way your real name does.
 
-Type it in the box and press **Add** (or Enter). Remove one with the trash button.
+Click **Manage keywords** on the Chat Alerts page — the button shows how many you have —
+to open the keyword window. Type one in and press **Add** (or Enter); remove one with the
+minus button beside it.
 
 Keywords are stored lowercased and matched case-insensitively.
 

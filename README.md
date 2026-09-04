@@ -15,7 +15,8 @@ A Tampermonkey userscript that adds power-user features to [EpikChat](https://ep
 
 ### Alerts
 
-Know when someone is talking to you.
+Know when someone is talking to you. Configured in EpikChat's own
+**Settings → Chat Alerts**.
 
 - **Mention highlighting** — five styles (Subtle, Strong highlight, Bold, Box, Pixie dust)
 - **Colours** — use the sender's own chat colour, or pick 1–6 custom colours (2+ cycles
