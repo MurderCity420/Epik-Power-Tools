@@ -112,8 +112,8 @@ the sidebar entirely — this keeps it one click away.
 
 ## User list gender filter
 
-Turn it on in EpikChat's own **Settings → Chat → gender filter**, alongside the site's
-other chat options — there is nothing to configure in the Power Tools panel.
+Turn it on in EpikChat's own **Settings → Layout → gender filter**, alongside the site's
+other layout options — there is nothing to configure in the Power Tools panel.
 
 It adds three small circular toggles to the top of the room's user list:
 
