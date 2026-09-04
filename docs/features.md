@@ -151,3 +151,8 @@ your default.
   works as you'd expect.
 - The Online count keeps showing the **room's** total, not the number of rows currently
   visible after filtering.
+- **The Viewers list is never filtered.** While you are broadcasting, the Room / Viewers
+  switch swaps the same list between room users and the people watching your cam. The
+  gender toggles apply only to the room list — switch to Viewers and you always see
+  everyone, whatever the toggles are set to. They keep their state, so switching back
+  to Room restores your filtering.
