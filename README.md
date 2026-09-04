@@ -2,19 +2,14 @@
 
 A Tampermonkey userscript that adds power-user features to [EpikChat](https://epikchat.com).
 
-This is the **development** repo (source of truth). Two release repos are built from it:
 
-| Repo | Who it's for |
-|---|---|
-| [`Epik-Power-Tools`](https://github.com/MurderCity420/Epik-Power-Tools) | everyone — the public download |
-| [`Epik-Power-Tools-Admin`](https://github.com/MurderCity420/Epik-Power-Tools-Admin) | developer-only, includes the Admin tab |
+## Quick start
 
-## Install
+1. **[Install Tampermonkey + the script →](docs/installation.md)**
+2. Reload your EpikChat tab.
+3. Click the blue **shield** icon at the right of the nav bar to open the panel.
 
-Install [Tampermonkey](https://www.tampermonkey.net/), then open
-[Epik-Power-Tools.user.js](https://raw.githubusercontent.com/MurderCity420/Epik-Power-Tools/main/Epik-Power-Tools.user.js)
-and confirm the install prompt. Reload EpikChat — a **blue shield** appears on the right of
-the nav bar. Click it to open the panel.
+➡️ **[Install / Update Epik Power Tools](https://raw.githubusercontent.com/MurderCity420/Epik-Power-Tools/main/Epik-Power-Tools.user.js)** (requires Tampermonkey — see the [installation guide](docs/installation.md) first)
 
 ## Features
 
@@ -28,6 +23,7 @@ Know when someone is talking to you.
 - **Chime** — 15 built-in alert sounds with a preview button
 - **Tab flash** — flashes the browser tab title when you're mentioned while away
 - **Reply alerts** — fires when someone quotes or replies to one of your messages
+- **Viewer alerts** — a notification when someone starts watching your cam
 - **Extra keywords** — get pinged on nicknames and variations of your name, not just your
   login
 
@@ -58,42 +54,14 @@ See [docs/alerts.md](docs/alerts.md) for the details.
 
 See [docs/features.md](docs/features.md) for the details.
 
-## Development
+## Documentation
 
-```bash
-npm install       # once
-npm run build     # build both variants, then auto-push dev + pre-prod
-npm run build:only # build only, no git
-npm test          # build (no push) + jsdom harness + publish-safety guards
-```
+- **[Installation](docs/installation.md)** — install Tampermonkey and the script
+- **[Alerts](docs/alerts.md)** — mentions, replies, viewer alerts, chimes and highlighting
+- **[Features](docs/features.md)** — layout controls, GIF pop-up, gender filter
 
-### Release stages
+## Browser compatibility
 
-| Repo | Stage | Pushed by |
-|---|---|---|
-| `Epik-Power-Tools-Full` | dev | `npm run build`, automatically |
-| `Epik-Power-Tools-Admin` | pre-prod | `npm run build`, automatically |
-| `Epik-Power-Tools` | **production** | **by hand, when a release is ready** |
+Tested on Chrome, Edge and Firefox with Tampermonkey. Any Chromium browser that runs
+Tampermonkey should work.
 
-Production is never pushed automatically. The publisher refuses it by repo name *and* by
-git remote, and aborts any commit whose staged files contain a session token or JWT.
-
-Edit files in `src/` — never the built output. Bump `@version` in `src/00-header.js` on
-every change or Tampermonkey won't auto-update.
-
-See [CLAUDE.md](CLAUDE.md) for the architecture, the EpikChat DOM contract, and the
-conventions this codebase follows.
-
-### Layout of this repo
-
-```
-src/            the userscript, split into numbered modules
-build-obfuscated.js
-test/           jsdom harness that runs the built script against real captured markup
-docs/           user-facing documentation (mirrored into the release repos)
-examples/       captured EpikChat page markup, used as the DOM reference
-tasks/          todo.md, lessons.md
-```
-
-> `examples/` holds real captures of the site. **Scrub `"token":"..."` from any new
-> capture before committing** — it is a live session credential.

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Epik Power Tools
 // @namespace    epik.powertools
-// @version      0.0.39
+// @version      0.0.40
 // @description  Mention alerts, reply alerts, message highlighting and a user-list gender filter for EpikChat
 // @author       MurderCity420
 // @match        https://epikchat.com/*
@@ -21,7 +21,7 @@
 // @updateURL    https://raw.githubusercontent.com/MurderCity420/Epik-Power-Tools/main/Epik-Power-Tools.user.js
 // ==/UserScript==
 
-unsafeWindow.EPT_VERSION = "0.0.39";
+unsafeWindow.EPT_VERSION = "0.0.40";
 unsafeWindow.EPT_ICONS = {
     // Emoji live out here, OUTSIDE the XOR pass, so multi-byte Unicode isn't
     // mangled by the byte-wise encode. Add new icon keys here, not in src/.
