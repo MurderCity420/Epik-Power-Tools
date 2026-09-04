@@ -110,11 +110,12 @@ the sidebar entirely — this keeps it one click away.
 
 ---
 
-The rest of the options below are under **Settings → Features** in the Power Tools panel.
-
 ## User list gender filter
 
-Adds three small circular toggles to the top of the room's user list:
+Turn it on in EpikChat's own **Settings → Chat → gender filter**, alongside the site's
+other chat options — there is nothing to configure in the Power Tools panel.
+
+It adds three small circular toggles to the top of the room's user list:
 
 | Button | Shows |
 |---|---|
@@ -134,9 +135,10 @@ follow that toggle rather than becoming permanently unhideable.
 
 ### Defaults at login
 
-The toggles reset every time you sign in. The **Male / Female / Unknown** checkboxes on
-the Features tab decide what they reset *to* — so if you always want female users hidden,
-untick **Female** and it will be off in every session.
+The toggles reset every time you sign in. The **Male / Female / Unknown** checkboxes that
+appear under the switch in **Settings → Chat** decide what they reset *to* — so if you
+always want female users hidden, untick **Female** and it will be off in every session.
+They are only shown while the filter is switched on.
 
 Clicking a toggle in the user list only affects the current session; it never rewrites
 your default.
