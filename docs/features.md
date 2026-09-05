@@ -122,6 +122,9 @@ Nothing rearranges itself. A cam you've placed stays put as others open and clos
 remembered per account. If the window gets smaller, a cam that would end up off the edge is
 brought back into view rather than disappearing.
 
+On the left or right, the cam area grows to at most **three large cams wide**. Past that the
+chat would be squeezed to nothing, so the area scrolls instead of getting wider.
+
 ## Collapsible sidebar
 
 The sidebar (trending rooms, friends, media) gains a small handle on its inner edge.
