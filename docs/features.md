@@ -101,19 +101,24 @@ whenever the layout needs it, so a cam can be dropped anywhere in the grid. Plai
 
 ### Moving a cam to a second row or column
 
-Cams open exactly as they always have — straight down the column when they're on the left
-or right, across the row when they're on top — and wrap to a second line only once the
-first is full.
+Cams pack themselves: on top they fill across the row, on the left or right they fill down
+the column, and they wrap to a new line when the current one is full. Because cams come in
+different sizes, a line holds however many happen to fit — two large ones, or three small
+ones — which is what lets you build an arrangement like:
 
-If you want one cam out of that line early, **drag it past the end** (below the strip when
-the cams are on top, out to the side when they're on the left or right). A dashed strip
-shows where to drop. The cam moves to the start of the second line and **stays there**.
-Nothing else moves, and it will not rearrange itself later.
+    [  large  ][  large  ]
+    [small][small][small]
+    [  large  ][  large  ]
 
-Drag it back into the first line to undo it.
+To start a new line **early**, drag a cam past the end of the current one — below the strip
+when the cams are on top, out to the side when they're on the left or right. A dashed strip
+shows where to drop. That cam moves to the start of a new line and stays there; drag others
+onto the line to join it.
 
-If the cam you moved out disappears — they turned their cam off — the second line closes
-on its own rather than leaving a gap.
+Drag it back into an earlier line to undo it. Nothing else is affected: the packing, the
+fill direction and the wrapping are all exactly as they were.
+
+If a cam you moved out disappears — they turned their cam off — its line closes on its own.
 
 ## Collapsible sidebar
 
