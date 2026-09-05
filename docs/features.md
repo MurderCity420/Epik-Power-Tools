@@ -99,6 +99,19 @@ along one axis and never moved between rows or columns. Power Tools unlocks the 
 whenever the layout needs it, so a cam can be dropped anywhere in the grid. Plain
 **Top + Scroll** is genuinely a single row, so it is left exactly as the site had it.
 
+### More rows of cams
+
+Normally a second row of cams only appears once the first one is completely **full** — that
+is just how the layout wraps.
+
+Drag a cam past the bottom of the cam strip (or past the side, when the cams are on the
+left or right) and a new row opens for it, with the cam area growing to fit. A dashed strip
+shows where to drop. Drag the cam back into the first row to close it again.
+
+Rows you opened are remembered per account. If a row empties on its own — someone in it
+turns their cam off — it closes automatically rather than leaving a gap. The cams can never
+take up more than half the window.
+
 ## Collapsible sidebar
 
 The sidebar (trending rooms, friends, media) gains a small handle on its inner edge.
