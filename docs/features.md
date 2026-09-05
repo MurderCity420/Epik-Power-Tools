@@ -122,8 +122,11 @@ Nothing rearranges itself. A cam you've placed stays put as others open and clos
 remembered per account. If the window gets smaller, a cam that would end up off the edge is
 brought back into view rather than disappearing.
 
-On the left or right, the cam area grows to at most **three large cams wide**. Past that the
-chat would be squeezed to nothing, so the area scrolls instead of getting wider.
+On the left or right, the cam area grows to at most **three large cams wide** — and fewer on
+a smaller screen, where three would leave nothing for chat. The limit is always a whole
+number of columns plus room for the scrollbar, so no cam is ever left half-hidden behind the
+edge of the chat and there is never a scrollbar under the cams. Once the columns are full,
+extra cams carry on downward and the area scrolls.
 
 ## Collapsible sidebar
 
@@ -136,12 +139,14 @@ the sidebar entirely — this keeps it one click away.
 
 ---
 
-## User list gender filter
+## User list filters
 
-Turn it on in EpikChat's own **Settings → Layout → gender filter**, alongside the site's
-other layout options — there is nothing to configure in the Power Tools panel.
+Turn them on in EpikChat's own **Settings → Layout → user list filters**, alongside the
+site's other layout options. One switch drives both filters below.
 
-It adds three small circular toggles to the top of the room's user list:
+### Gender
+
+Three small circular toggles at the top of the room's user list:
 
 | Button | Shows |
 |---|---|
@@ -184,3 +189,81 @@ your default.
   gender toggles apply only to the room list — switch to Viewers and you always see
   everyone, whatever the toggles are set to. They keep their state, so switching back
   to Room restores your filtering.
+
+### Status
+
+Beside the gender toggles is a single **status button**. Click it for a drop-down listing
+the four statuses EpikChat gives people:
+
+| | |
+|---|---|
+| **Active** | At the keyboard |
+| **Idle** | Gone quiet |
+| **Away** | Marked themselves away |
+| **Do Not Disturb** | Don't-bother-me |
+
+Untick any of them to hide those users from the room list; tick it again to bring them
+back. Any number can be off at once, and the button turns blue while anything is filtered,
+so you always know why the list is short.
+
+Unlike the gender toggles — which reset to your chosen defaults at every login — **the
+status choices are remembered between sessions.** Untick Away once and it stays unticked
+until you change it.
+
+Two things it deliberately doesn't do: it never filters the **Viewers** list (same rule as
+the gender toggles), and it never hides a user whose status isn't one of the four above —
+blocked users, for instance, are marked differently by the site and always stay visible,
+so nothing can go missing with no way to bring it back.
+
+## Chat commands
+
+A small **terminal icon** appears in the chat box, just left of the Snapchat, GIF and emoji
+buttons. Click it for the full list of EpikChat's slash commands, each with what it does.
+
+Commands that take no extra information — `/joke`, `/fact`, `/ping` — drop straight into
+the chat box when you click them, ready to send.
+
+Commands that need something after them ask for it first. Picking `/roll` shows a field
+labelled **sides** with the site's own example (`10`) as a hint; type a value and click
+**Insert**, or just press Enter. The finished `/roll 20` lands in the chat box with the
+cursor at the end, so you can edit it before sending — nothing is ever sent for you.
+
+Leave the field empty and you get the bare command, which is what you want for the ones
+where the extra part is optional. **‹ back** returns to the list, and Escape or a click
+anywhere else closes the picker.
+
+Whatever you had half-typed is replaced, so pick your command before writing your message.
+
+## EPT Data and EPT Logs
+
+Two more pages at the bottom of EpikChat's **Settings**, under Send Feedback.
+
+**EPT Data** backs up and restores your settings. *Download settings* saves a `.ept` file
+for the account you're logged into — settings are stored per account, so an export covers
+that one only. *Restore from file* reads one back, and only keys Power Tools recognises,
+so a stray file can't write anything odd. *Reset all settings* puts every option back to
+its default.
+
+**EPT Logs** is the diagnostic log — what Power Tools did and when. Filter it by text or
+by severity, change how long entries are kept (1–7 days), then *Copy*, *Download .txt* or
+*Clear log*. The severity filter narrows what you're **looking at**, never what's stored,
+so you can always turn it back down and see everything again.
+
+## Where the version and update button live
+
+Both sit in **EpikChat's own Settings**, which is now the only place Power Tools puts
+anything.
+
+- **EPT Check / EPT Upgrade** is at the top of the Settings panel, between the "Settings"
+  title and the close button. It reads **EPT Check** normally; once a newer version is
+  found it turns into **EPT Upgrade** and opens the install page. Both labels name the
+  tool, so neither can be mistaken for an update to EpikChat itself.
+- The **version and Docs link** are at the bottom, appended to EpikChat's own version
+  line:
+
+  ```
+  v4.5.71 · Release Notes | EPT v0.0.65 · Docs
+  ```
+
+EpikChat's own version and Release Notes link are untouched — ours is added after them.
+

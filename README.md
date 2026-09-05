@@ -7,7 +7,7 @@ A Tampermonkey userscript that adds power-user features to [EpikChat](https://ep
 
 1. **[Install Tampermonkey + the script →](docs/installation.md)**
 2. Reload your EpikChat tab.
-3. Click the blue **shield** icon at the right of the nav bar to open the panel.
+3. Open EpikChat's own **Settings** (the gear icon in the nav bar) — everything is in there.
 
 ➡️ **[Install / Update Epik Power Tools](https://raw.githubusercontent.com/MurderCity420/Epik-Power-Tools/main/Epik-Power-Tools.user.js)** (requires Tampermonkey — see the [installation guide](docs/installation.md) first)
 

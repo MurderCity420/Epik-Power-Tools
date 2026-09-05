@@ -57,16 +57,29 @@ Click **Install** on that page.
 
 ## Step 5 — Reload EpikChat
 
-Refresh your EpikChat tab. A blue **shield** icon appears at the right-hand end of the nav
-bar, next to the other chat icons — click it to open the Power Tools panel. You're done!
+Refresh your EpikChat tab. Everything lives in EpikChat's own **Settings** — the gear icon
+in the nav bar. You'll find **Chat Alerts** near the top, extra options on the **Layout**
+and **Chat** pages, and **EPT Data** / **EPT Logs** at the bottom of the list. You're done!
 
 ---
 
 ## Updating
 
 Tampermonkey checks for new versions automatically and will prompt you when one is
-available. To force a check now, open the Power Tools panel and click the **↻** button in
-its header, or use Tampermonkey's **Check for userscript updates** menu item.
+available. To force a check now, open **EpikChat's own Settings** (the gear icon in the
+nav bar) and click **EPT Check** at the top of the panel, beside the close button — it
+turns into **EPT Upgrade** when a newer version is waiting. Both labels name the tool, so
+there is no mistaking them for an update to EpikChat itself. Tampermonkey's **Check for userscript
+updates** menu item does the same thing.
+
+The version you have installed is shown at the bottom of that same Settings panel, on the
+line with EpikChat's own version:
+
+```
+v4.5.71 · Release Notes | EPT v0.0.65 · Docs
+```
+
+**Docs** opens this documentation.
 
 ## Uninstalling
 
@@ -78,12 +91,12 @@ extension's data, so reinstalling brings them back.
 
 ## Troubleshooting
 
-**No shield icon after reloading.**
+**No Chat Alerts row in Settings.**
 Check the script is enabled in the Tampermonkey dashboard, and that you're on
-`epikchat.com`. On Chrome and Edge, re-check Step 3 — the shield is the first thing that
-fails when **Allow User Scripts** is off.
+`epikchat.com`. On Chrome and Edge, re-check Step 3 — this is the first thing that fails
+when **Allow User Scripts** is off.
 
-**The panel opens but nothing highlights.**
+**Settings look right but nothing highlights.**
 The chat lives inside a frame that loads a moment after the page. Give it a few seconds
 after a reload, then try again.
 
