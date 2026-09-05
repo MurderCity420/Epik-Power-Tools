@@ -99,26 +99,29 @@ along one axis and never moved between rows or columns. Power Tools unlocks the 
 whenever the layout needs it, so a cam can be dropped anywhere in the grid. Plain
 **Top + Scroll** is genuinely a single row, so it is left exactly as the site had it.
 
-### Moving a cam to a second row or column
+### Arranging the cams
 
-Cams pack themselves: on top they fill across the row, on the left or right they fill down
-the column, and they wrap to a new line when the current one is full. Because cams come in
-different sizes, a line holds however many happen to fit — two large ones, or three small
-ones — which is what lets you build an arrangement like:
+Cams sit on a grid of equal slots, and they open exactly as they always have — down the
+column when they're on the left or right, across the row when they're on top.
 
-    [  large  ][  large  ]
-    [small][small][small]
-    [  large  ][  large  ]
+**Drag a cam anywhere to place it.** A dotted box shows the slot it will land in; let go and
+it stays there. Drop it on a slot another cam already holds and the two swap, so cams can
+never end up on top of each other.
 
-To start a new line **early**, drag a cam past the end of the current one — below the strip
-when the cams are on top, out to the side when they're on the left or right. A dashed strip
-shows where to drop. That cam moves to the start of a new line and stays there; drag others
-onto the line to join it.
+Because every cam has its own slot, you can leave **gaps**:
 
-Drag it back into an earlier line to undo it. Nothing else is affected: the packing, the
-fill direction and the wrapping are all exactly as they were.
+    col 1   col 2
 
-If a cam you moved out disappears — they turned their cam off — its line closes on its own.
+    [cam ]            row 1
+                      row 2   (left empty)
+    [cam ]            row 3
+            [cam ]    row 4
+
+Nothing rearranges itself. A cam you have placed stays where you put it as others open and
+close, and it's remembered per account. If that cam closes, its slot is simply forgotten.
+
+Slots are sized to the largest cam that's open, so a small cam sits in the top-left of its
+slot rather than being stretched.
 
 ## Collapsible sidebar
 
