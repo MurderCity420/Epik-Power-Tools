@@ -101,27 +101,23 @@ whenever the layout needs it, so a cam can be dropped anywhere in the grid. Plai
 
 ### Arranging the cams
 
-Cams sit on a grid of equal slots, and they open exactly as they always have — down the
-column when they're on the left or right, across the row when they're on top.
+Cams open exactly as they always have — down the column when they're on the left or right,
+across the row when they're on top — and they pack by their **real size**, so a row holds
+two large cams or three small ones, whatever fits.
 
-**Drag a cam anywhere to place it.** A dotted box shows the slot it will land in; let go and
-it stays there. Drop it on a slot another cam already holds and the two swap, so cams can
-never end up on top of each other.
+**Drag a cam anywhere to place it.** A dotted box the size of that cam shows where it will
+land; let go and it stays there. Cams can never overlap: if a spot won't take the cam it
+moves to the nearest one that will.
 
-Because every cam has its own slot, you can leave **gaps**:
+Because each cam holds its own place, you can leave **gaps**:
 
-    col 1   col 2
+    [  large  ][  large  ]
+    [sm][sm][sm]
 
-    [cam ]            row 1
-                      row 2   (left empty)
-    [cam ]            row 3
-            [cam ]    row 4
+                [sm]          <- placed lower, leaving space above
 
-Nothing rearranges itself. A cam you have placed stays where you put it as others open and
-close, and it's remembered per account. If that cam closes, its slot is simply forgotten.
-
-Slots are sized to the largest cam that's open, so a small cam sits in the top-left of its
-slot rather than being stretched.
+Nothing rearranges itself. A cam you have placed stays put as others open and close, and
+it's remembered per account. If that cam closes, its place is simply freed.
 
 ## Collapsible sidebar
 
