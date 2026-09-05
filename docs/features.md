@@ -99,18 +99,21 @@ along one axis and never moved between rows or columns. Power Tools unlocks the 
 whenever the layout needs it, so a cam can be dropped anywhere in the grid. Plain
 **Top + Scroll** is genuinely a single row, so it is left exactly as the site had it.
 
-### More rows of cams
+### Moving a cam to a second row or column
 
-Normally a second row of cams only appears once the first one is completely **full** — that
-is just how the layout wraps.
+Cams open exactly as they always have — straight down the column when they're on the left
+or right, across the row when they're on top — and wrap to a second line only once the
+first is full.
 
-Drag a cam past the bottom of the cam strip (or past the side, when the cams are on the
-left or right) and a new row opens for it, with the cam area growing to fit. A dashed strip
-shows where to drop. Drag the cam back into the first row to close it again.
+If you want one cam out of that line early, **drag it past the end** (below the strip when
+the cams are on top, out to the side when they're on the left or right). A dashed strip
+shows where to drop. The cam moves to the start of the second line and **stays there**.
+Nothing else moves, and it will not rearrange itself later.
 
-Rows you opened are remembered per account. If a row empties on its own — someone in it
-turns their cam off — it closes automatically rather than leaving a gap. The cams can never
-take up more than half the window.
+Drag it back into the first line to undo it.
+
+If the cam you moved out disappears — they turned their cam off — the second line closes
+on its own rather than leaving a gap.
 
 ## Collapsible sidebar
 
