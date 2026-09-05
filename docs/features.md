@@ -111,6 +111,10 @@ land, snapping to the edges of the other cams so everything stays lined up. Let 
 stays there. Cams can never overlap — if a spot won't take the cam it goes to the nearest
 one that will.
 
+**To start a new column or row**, drop the cam on the dashed strip that appears along the
+edge the cams grow towards — beside the chat when they're on the left or right, below them
+when they're on top. It's there for the whole drag and lights up as you move onto it.
+
 Because each cam keeps its own position, you can leave **gaps**: drop a cam lower down and
 the space above it stays empty.
 
