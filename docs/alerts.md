@@ -108,6 +108,19 @@ site's own bubble stack (top right) the moment someone starts watching.
 *your own* stream, so with your cam off there is nothing to report and the feature is
 silent. That is a limit of what the site tells the browser, not a bug.
 
+## Who's watching, in the room header
+
+While you're broadcasting, EpikChat shows your viewer count as a small pill sitting **on
+top of your cam**, where it covers part of the picture. Power Tools mirrors that number
+into the room header instead, between the room's member badge and the close button.
+
+**Hover or click it** to see who is actually watching — a dropdown listing each viewer by
+name and avatar. Click pins it open so you can move the mouse into the list; click again,
+press Escape, or click anywhere else to close it.
+
+It only appears while your cam is on, since that's the only time anyone can be watching,
+and the site's own pill on the cam is left exactly where it is.
+
 A few details worth knowing:
 
 - **Nobody is announced twice.** If someone stops watching and starts again, that counts
